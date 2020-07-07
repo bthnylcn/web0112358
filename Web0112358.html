@@ -2,22 +2,48 @@
 
 <html lang="tr">
 <head>
+	<meta charset="UTF-8">
+	<meta name="description" content="deneme sitesi">
+	<meta name="keywords" content="html,css,js">
+	<meta name="author" content="hctr">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta http-equiv="refresh" content="30">
+	
+	<base href="https://www.google.com/" target="-blank">
 	<title>SAYFA BAŞLIĞI</title>
 	<script>
 		function olay(x) {
 			alert(x);
 			}
-	</script>		
+	</script>
+	<style>
+		.p1{
+		color: blue;
+		
+		}
+		.p2{
+		color: red;
+		
+		}
+		#hola1{
+		color: yellow;
+		}
+	</style>	
+	<link rel="stylesheet" href="">
 </head>
 
 <body>
+	<div class="p1">
 	<h1 ondblclick="olay('tıkla baba tıkla')">BAŞLIK 1</h1>
 	<h2 oncopy="olay('bunuda kopyalamassın bee')">BAŞLIK 2</h2>
 	<h3>BAŞLIK 3</h3>
 	<h4>BAŞLIK 4</h4>
 	<h5>BAŞLIK 5</h5>
 	<h6>BAŞLIK 6</h6>
-	<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
+	</div>
+	<img src="images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
 	<hr>
 	<img src="http://ozgurceyaz.com/wp-content/themes/ozgurceyaz/assets/img/ozgurceyaz.png" alt="blackbird" height="5%" width="5%"/>
 	<br>
@@ -29,6 +55,7 @@
 	<br>TFF, 32. haftadaki Fenerbahçe x Sivasspor ve Denizlispor x Trabzonspor maçlarını 13 Temmuz 2020 Pazartesi aynı saate (21:00) aldı.</p>
 	<a class="button" href="https://www.w3docs.com/learn-html/html-button-tag.html">Buton deneme 1</a>
 	<button type="button" style="color: red;"><b>Buton Deneme 2 </b></button>
+	<div class="p2">
 	<ul style="list-style-type: circle">
 		<li>Fenebahçe3-4Galatasaray</li>
 		<li>Fenebahçe2-2Galatasaray</li>
@@ -46,8 +73,9 @@
 		<li>Fenebahçe1-0Galatasaray</li>
 		<li>Fenebahçe1-3Galatasaray</li>
 	</ol>
+	</div>
 	<dl>
-		<dt>Hola!</dt>
+		<dt id="hola1">Hola!</dt>
 		<dd>Merhaba</dd>
 		<dt>Como mierda!</dt>
 		<dd>Sie</dd>
@@ -102,6 +130,24 @@
 		<input name="telefon" type="tel" placeholder="+90...." disabled>
 		<br>
 		<input type="submit" value="giriş yap">
+		<br>
+		<br>
+		<input list="datalistesi">
+		<datalist id="datalistesi">
+			<option value="didier">
+			<option value="wesley">
+			<option value="lukas">
+		</datalist>
+		<br>
+		<br>
+		<select>
+			<option value="deger1">deger 1</option>
+			<option value="deger2">deger 2</option>
+			<option value="deger3">deger 3</option>
+		</select>
+		<br>
+		<br>
+		<input type="checkbox">kullanıcı sözleşmesini kabul ediyorum.
 		<br>
 		<br>
 		<label>Resim gönder =====></label>
